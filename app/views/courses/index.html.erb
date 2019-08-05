@@ -14,7 +14,9 @@
       <%= course.description %>
     </div>
     <div class="col-sm-8 col-12">
-      <%= course.cost %>
+      <span class="badge badge-default">
+        <%= number_to_currency course.cost %>
+      </span>
     </div>
     <div class="col-sm-4 col-12 text-center">
       <%= link_to 'More Details...', course_path(course), class: 'btn btn-primary btn-large' %>
